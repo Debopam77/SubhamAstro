@@ -1,2 +1,2 @@
 # SubhamAstro
-Suham's astrology application
+Subham's astrology application
