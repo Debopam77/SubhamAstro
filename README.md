@@ -1,2 +1,3 @@
-# SubhamAstro
-Subham's astrology application
+# SubhamAstro 🌌
+
+A modern celestial astrology platform
