@@ -1,8 +1,24 @@
 services:
+  # Python Backend API (Gemini LLM & Deepgram STT)
+  astro-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: subham-astro-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    environment:
+      - PORT=8000
+
   # Development service with Hot Module Replacement (HMR)
   north-star-astro:
     build:
-      context: .
+      context: ./frontend
       dockerfile: Dockerfile
       target: development
     container_name: north-star-astro-dev
@@ -11,18 +27,21 @@ services:
       - "5173:5173"
     volumes:
       # Mount host directory into container for live reload
-      - .:/app
+      - ./frontend:/app
       # Prevent host directory from overriding container node_modules
       - /app/node_modules
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
       - WATCHPACK_POLLING=true
+      - VITE_BACKEND_URL=http://astro-backend:8000
+    depends_on:
+      - astro-backend
 
   # Optional production service: serves optimized build via Nginx
   north-star-astro-prod:
     build:
-      context: .
+      context: ./frontend
       dockerfile: Dockerfile
       target: production
     container_name: north-star-astro-prod

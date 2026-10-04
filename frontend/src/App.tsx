@@ -2,6 +2,7 @@ import React from 'react'
 import { RouterProvider, useRouter } from './context/RouterContext'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
+import { AstroChatbot } from './components/AstroChatbot'
 
 import { HomePage } from './pages/HomePage'
 import { AboutPage } from './pages/AboutPage'
@@ -64,6 +65,7 @@ const AppRoutes: React.FC = () => {
       <Navbar />
       <main style={{ flex: 1, position: 'relative', zIndex: 1 }}>{renderPage()}</main>
       <Footer />
+      <AstroChatbot />
     </div>
   )
 }

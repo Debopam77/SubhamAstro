@@ -260,4 +260,23 @@ h1, h2, h3, h4, .brand-title {
   will-change: transform, opacity;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .astro-chatbot-container {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+}
+
+
 
