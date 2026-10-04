@@ -1,11 +1,11 @@
 services:
   # Development service with Hot Module Replacement (HMR)
-  subham-astro:
+  north-star-astro:
     build:
       context: .
       dockerfile: Dockerfile
       target: development
-    container_name: subham-astro-dev
+    container_name: north-star-astro-dev
     restart: unless-stopped
     ports:
       - "5173:5173"
@@ -20,12 +20,12 @@ services:
       - WATCHPACK_POLLING=true
 
   # Optional production service: serves optimized build via Nginx
-  subham-astro-prod:
+  north-star-astro-prod:
     build:
       context: .
       dockerfile: Dockerfile
       target: production
-    container_name: subham-astro-prod
+    container_name: north-star-astro-prod
     restart: unless-stopped
     ports:
       - "8080:80"

@@ -23,7 +23,7 @@ export const ContactPage: React.FC = () => {
     <div className="container" style={{ paddingBottom: '4rem' }}>
       <PageHeader
         title="Contact & Consultation Inquiries"
-        subtitle="Reach out with your questions, consultation requests, or feedback. We are here to illuminate your journey."
+        subtitle="“Aapko future se darana nahi — aapko apni direction samajhne mein help karna.” Reach out directly to connect with Acharya Prateek Shastri."
         tag="Get in Touch"
         icon={<Mail size={24} />}
       />
@@ -36,7 +36,7 @@ export const ContactPage: React.FC = () => {
               We Are Here to Guide You
             </h3>
             <p style={{ color: '#94a3b8', fontSize: '0.92rem', lineHeight: 1.7, marginBottom: '1.75rem' }}>
-              Whether seeking guidance in love, career decisions, ancestral healing, or spiritual growth, SubhamAstro provides compassionate, grounded clarity.
+              Whether seeking guidance in career inflection points, relationship compatibility, or understanding your planetary periods, North Star Astro provides compassionate, grounded clarity rooted in 50 years of ancestral legacy.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
@@ -46,8 +46,8 @@ export const ContactPage: React.FC = () => {
                 </div>
                 <div>
                   <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', display: 'block' }}>Email</span>
-                  <a href="mailto:contact@subhamastro.com" style={{ color: '#f8fafc', textDecoration: 'none', fontWeight: 500, fontSize: '0.95rem' }}>
-                    contact@subhamastro.com
+                  <a href="mailto:contact@northstarastro.com" style={{ color: '#f8fafc', textDecoration: 'none', fontWeight: 500, fontSize: '0.95rem' }}>
+                    contact@northstarastro.com
                   </a>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export const ContactPage: React.FC = () => {
                 <div>
                   <span style={{ fontSize: '0.75rem', color: '#94a3b8', textTransform: 'uppercase', display: 'block' }}>Location</span>
                   <span style={{ color: '#f8fafc', fontWeight: 500, fontSize: '0.95rem' }}>
-                    Kolkata & Global Online Consultations
+                    Sodepur, West Bengal & Global Online Consultations
                   </span>
                 </div>
               </div>

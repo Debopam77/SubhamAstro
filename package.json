@@ -1,11 +1,12 @@
 {
-  "name": "subham-astro",
+  "name": "north-star-astro",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "zip": "python zip.py",
     "preview": "vite preview"
   },
   "dependencies": {

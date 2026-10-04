@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from '../context/RouterContext'
-import { Sparkles, Mail, Heart } from 'lucide-react'
+import { Mail, Heart } from 'lucide-react'
 import { NAV_ITEMS } from './Navbar'
 
 export const Footer: React.FC = () => {
@@ -24,31 +24,39 @@ export const Footer: React.FC = () => {
         >
           {/* Col 1: Brand Info */}
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1rem' }}>
-              <div
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.85rem' }}>
+              <img
+                src="/logo-symbol.png"
+                alt="North Star Astro"
                 style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '8px',
-                  background: 'linear-gradient(135deg, #ffd700 0%, #ff7b00 100%)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
+                  height: '42px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0 0 10px rgba(255, 215, 0, 0.45))',
                 }}
-              >
-                <Sparkles size={18} color="#070913" />
+              />
+              <div>
+                <span className="brand-title" style={{ fontSize: '1.15rem', color: '#ffd700', display: 'block', lineHeight: 1.1 }}>
+                  North Star Astro
+                </span>
+                <span style={{ fontSize: '0.7rem', color: '#94a3b8', letterSpacing: '0.04em' }}>
+                  Sodepur, West Bengal
+                </span>
               </div>
-              <span className="brand-title" style={{ fontSize: '1.15rem', color: '#ffd700' }}>
-                SubhamAstro
-              </span>
             </div>
-            <p style={{ color: '#94a3b8', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-              Illuminating life paths through the timeless wisdom of Vedic astrology, planetary alignment, and karmic analysis.
+            <p style={{ color: '#fbbf24', fontSize: '0.82rem', fontWeight: 600, letterSpacing: '0.04em', marginBottom: '0.5rem', textTransform: 'uppercase' }}>
+              Dhruv Tara — Direction, Clarity & Constancy
             </p>
+            <p style={{ color: '#94a3b8', fontSize: '0.85rem', lineHeight: 1.65, marginBottom: '1rem' }}>
+              Rooted in a 50-year ancestral legacy and 15 years of expertise by Acharya Prateek Shastri. Empowering conscious decision-making rather than fear-based dependency.
+            </p>
+            <div style={{ fontStyle: 'italic', color: '#cbd5e1', fontSize: '0.82rem', borderLeft: '2px solid #ffd700', paddingLeft: '0.75rem', marginBottom: '1.25rem' }}>
+              “The stars may indicate the path, but conscious action creates the journey.”
+            </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#cbd5e1', fontSize: '0.85rem' }}>
               <Mail size={16} color="#ffd700" />
-              <a href="mailto:contact@subhamastro.com" style={{ color: '#cbd5e1', textDecoration: 'none' }}>
-                contact@subhamastro.com
+              <a href="mailto:contact@northstarastro.com" style={{ color: '#cbd5e1', textDecoration: 'none' }}>
+                contact@northstarastro.com
               </a>
             </div>
           </div>
@@ -140,7 +148,7 @@ export const Footer: React.FC = () => {
             color: '#64748b',
           }}
         >
-          <p>© {new Date().getFullYear()} SubhamAstro. All celestial rights reserved.</p>
+          <p>© {new Date().getFullYear()} North Star Astro. All celestial rights reserved.</p>
           <p style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
             Crafted with <Heart size={14} color="#f43f5e" fill="#f43f5e" /> for cosmic exploration.
           </p>

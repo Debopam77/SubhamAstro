@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useRouter } from '../context/RouterContext'
-import { Sparkles, Menu, X, User } from 'lucide-react'
+import { Menu, X, User } from 'lucide-react'
 
 export interface NavItem {
   label: string
@@ -61,20 +61,16 @@ export const Navbar: React.FC = () => {
             flexShrink: 0,
           }}
         >
-          <div
+          <img
+            src="/logo-symbol.png"
+            alt="North Star Astro Symbol"
             style={{
-              width: '40px',
-              height: '40px',
-              borderRadius: '12px',
-              background: 'linear-gradient(135deg, #ffd700 0%, #ff7b00 100%)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: '0 0 15px rgba(255, 215, 0, 0.35)',
+              height: '42px',
+              width: 'auto',
+              objectFit: 'contain',
+              filter: 'drop-shadow(0 0 10px rgba(255, 215, 0, 0.45))',
             }}
-          >
-            <Sparkles size={22} color="#070913" />
-          </div>
+          />
           <div>
             <span
               className="brand-title"
@@ -86,7 +82,7 @@ export const Navbar: React.FC = () => {
                 lineHeight: 1.1,
               }}
             >
-              SubhamAstro
+              North Star Astro
             </span>
             <span
               style={{
@@ -97,7 +93,7 @@ export const Navbar: React.FC = () => {
                 textTransform: 'uppercase',
               }}
             >
-              Vedic & Modern Astrology
+              Guiding You by the Stars
             </span>
           </div>
         </Link>
